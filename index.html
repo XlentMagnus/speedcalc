@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cykelloppskalkylator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cykelloppskalkylator</h1>
+    
+    <div id="calculatorContainer" class="container">
+        <input type="text" id="calculationNameInput" placeholder="Namn på uträkning (ex: Vätternrundan 2024)">
+        <input type="number" id="distanceInput" placeholder="Distans (km)">
+        <input type="number" id="desiredTimeHoursInput" placeholder="Önskad sluttid (timmar)">
+        <input type="number" id="desiredTimeMinutesInput" placeholder="Önskad sluttid (minuter)">
+        <input type="number" id="stopsInput" placeholder="Antal stopp" min="0">
+        <div id="stopTimesContainer"></div>
+        <button id="calculateButton">Beräkna</button>
+        <button id="clearHistoryButton">Rensa historik</button>
+        <button id="exportButton">Exportera till CSV</button>
+        <div id="result"></div>
+    </div>
+    
+    <h2>Tidigare Uträkningar</h2>
+    <div id="historyContainer" class="container">
+        <ul id="historyList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
